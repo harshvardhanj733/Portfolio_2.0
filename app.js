@@ -4,6 +4,7 @@ const path = require('path')
 const UserModel = require("./models/user")
 const database = require('./db')
 const transporter = require('./email')
+require('dotenv').config();
 let port=8000;
 
 database();
@@ -34,7 +35,7 @@ try {
     const savedMessage = await message.save();
 
     const options = {
-        from: 'harshvardhanj733@outlook.com',
+        from: process.env.EMAIL,
         to: Email,
         subject: "Form Submitted Successfully",
         text: "Thank You for contacting me, I will reply to you shortly!"

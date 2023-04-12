@@ -7,14 +7,15 @@ html(lang="en")
         meta(name="keywords", content="")
         meta(name="description", content="")
         meta(name="ROBOT", content="INDEX, FOLLOW")
-        link(rel="shortcut icon", href="../pictures/Vector.svg", type="image/x-icon")
-        title Anushree Sharma | Developer
+        link(rel="shortcut icon", href="../pictures/HVJLogo.png", type="image/x-icon")
+        title Harsh Vardhan Jain | Full Stack Developer
         style 
             include ../style/style.css
     body
         nav
             div#logo
-                img(src="../pictures/Vector.svg", alt="", srcset="")#logoImg
+                //- img(src="../pictures/Vector.svg", alt="", srcset="")#logoImg
+                img(src="../pictures/HVJLogoNoBg.png", alt="", srcset="")#logoImg
             ul
                 li 
                     a(href="#Home") HOME
@@ -23,38 +24,72 @@ html(lang="en")
                 li
                     a(href="#Skills") SKILLS
                 li
-                    a(href="#Experience") EXPERIENCE
+                    a(href="#Experience") PROJECTS
                 li
                     a(href="#form") GET IN TOUCH
         div#main
-            img(src="../pictures/Vector.svg")#backgroundImg
+            img(src="../pictures/HVJLogoNoBg.png")#backgroundImg
             section#Home.section 
                 button#resume.resume
-                    a(href="/resume" target="__blank")#download Get Resume 
+                    a(href="/resume" target="__blank").linkStyle Get Resume
+                h2 Hey There! 
                 h6#typing0 My Name is
-                p#typing1 Anushree Sharma.
-                h5 UI/UX Designer and a Website Developer.
+                p#typing1 Harsh Vardhan Jain.
+                h5 Full Stack Web Developer.
             section#About.section 
                 p About 
-                div I am an Undergraduate pursuing Bachelors in Computer Science and Design. I like to design templates using different UI tools.I am also proficient in  making Frontend Websites and Coding. I love painting and I am always curious about learning new things.Looking for good opportunities.
+                div
+                    ul
+                        li I am an Undergraduate student pursuing Bachelors in Computer Science and Engineering from Vellore Institute of Technology, Vellore, with a CGPA of 9.47. 
+                        li I am a Full Stack Developer and I love to make cool websites using cooler tech! 
+                        li I am proficient in using Node.js, Express.js, MongoDB, React.js, and Django. A
+                        li part from this, in my free time, I am a sport enthusiast and I love to sweat it out on the badminton court or on the football field!
             section#Skills.section 
                 p Skills 
-                div I'm proficient with different Developing as well as designing skills, Also When I master a new skill, I feel extremely curious and content.
+                div Here are some of the skills that I'm proficient in, along with my perceived level of proficiency: 
                 div C++ 
                     img(src="../pictures/3star.svg", alt="", srcset="")
                 div Data Structures and Algorithms
-                    img(src="../pictures/2star.svg", alt="")
+                    img(src="../pictures/4star.svg", alt="")
                 div Python 
                     img(src="../pictures/3star.svg", alt="", srcset="")
-                div UI/UX Designing
-                    img(src="../pictures/5star.svg", alt="", srcset="")
-                div Regex 
+                div Javascript
+                    img(src="../pictures/4star.svg", alt="", srcset="")
+                div Effective Communication 
                     img(src="../pictures/5star.svg", alt="", srcset="")
                 div MERN Stack Web developement
-                    img(src="../pictures/3star.svg", alt="", srcset="")
+                    img(src="../pictures/4star.svg", alt="", srcset="")
             section#Experience.section 
-                p Experience 
-                div I have interned for a few companies, including Digimonk, where I spent about two months as a user interface intern. I've taken multiple data science courses and attended a number of seminars. I'm up for exploring fresh Opportunities and jobs.
+                p Projects  
+                div.projects
+                    h3 Algo Visualiser 
+                    span Created a website to visually demonstrate various sorting algorithms. 
+                    button.but
+                        a(href="http://github.com/harshvardhanj733/Visualiser-Project" target="__blank").linkStyle Check it Out 
+                div.projects 
+                    h3 News App 
+                    span Developed a News App using React.js and News API to generate top news headlines from around the world. Users can search the news according to the topics, or go through the popular generic topics.
+                    button.but
+                        a(href="http://github.com/harshvardhanj733/News" target="__blank").linkStyle Check it Out
+                div.projects 
+                    h3 Text Editor 
+                    span Developed a basic text editor capable of trimming white spaces, converting to lowercase or uppercase, showing the number of characters and the number of words, and copying the text to clipboard using React.js
+                    button.but
+                        a(href="http://github.com/harshvardhanj733/text_editor" target="__blank").linkStyle Check it Out
+                div.projects 
+                    h3 Art Spot 
+                    span Developed the UI/UX for an art website, called Art Spot. Used vanilla Js to develop it.
+                    button.but
+                        a(href="http://github.com/harshvardhanj733/ArtSpot" target="__blank").linkStyle Check it Out
+                div.projects 
+                    h3 DoNake
+                    ul
+                    li It's an ongoing project in which I'm developing a website wherein people and directly donate to various NGOs, and keep track of how there donations are being used.
+                    li NGOs can register with us, and upon inspection, they can be registered as verified members with us.
+                    li Users can then donate to these verified members with assurity and realibility.
+                    li I'm using Vanilla Js to make the frontend, while using Node.js and Express.js to make the backend. Alongside, I'm implementing the database using MongoDB Atlas.
+                    li Stay Tuned for more Updates!
+                    li The site will be out soon!        
             section#form.section
                 div.info
                     p Get In Touch 
@@ -76,11 +111,11 @@ html(lang="en")
                         li.btn 
                             input(type="submit", value="Submit" name="submit" alt="Join" onclick="submit()")#btn
             div.icons
-                a(href="https://www.linkedin.com/in/anushree-sharma-605422229/" target="__blank") 
+                a(href="https://www.linkedin.com/in/harsh-vardhan-jain-701179222/" target="__blank") 
                     img(src="../pictures/linkedin.svg", alt="Linkedin", srcset="")#linkedin.iconsImg
                 a(href="https://medium.com/@anushreesharma232003" target="__blank")  
                     img(src="../pictures/medium.svg", alt="", srcset="")#medium.iconsImg
-                a(href="https://github.com/Anushreesharma23" target="__blank") 
+                a(href="https://github.com/harshvardhanj733/" target="__blank") 
                     img(src="../pictures/git.svg", alt="", srcset="")#git.iconsImg
                 a(href="https://www.adobe.com/?promoid=RTQCN3LX" target="__blank")  
                     img(src="../pictures/behance.svg", alt="", srcset="")#behance.iconsImg

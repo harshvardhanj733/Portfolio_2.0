@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: linear-gradient(to top,#475369 30%,#364661 60%,rgba(255,0,0,0)10%,#364661 40%);
+    background-color: #364661;
     background-repeat: no-repeat;
     color:white;
     font-family: 'Inter', sans-serif;
@@ -15,32 +15,35 @@ body{
 
 #backgroundImg{
     position: fixed;
-    top: 15vh;
-    right: -10vw;
-    height: 400px;
-    width: 400px;
+    top: -10vh;
+    right: -28vw;
+    height: 600px;
+    width: 600px;
     z-index: 10;
     opacity: 0.2;
     transform: rotate(330deg)
 }
 
-#logo{
+/* #logo{
     height: 6px;
     width: 4px;
     padding-right: 550px;
     padding-left: 20px;
     padding-top: 10px;
-}
+    margin-bottom: 2px;
+} */
 #logoImg{
-    height: 45px;
-    width: 40px;
+    height: 90px;
+    width: 120px;
     padding-left: 10px;
+    position: relative;
+    bottom: 15px;
 }
 
 nav{
  cursor: pointer;
  display: flex;
- justify-content: right;
+ justify-content: center;
  padding-right: 100px;
  padding-top: 15px;
  font-weight: bold;
@@ -68,12 +71,16 @@ nav>ul>li{
   -webkit-text-fill-color: transparent;
     /* margin-right: 100px; */
 }
+nav>ul>li:hover{
+    transform: scale(1.5);
+}
 
 #main{
     height: 85vh;
     position: absolute;
     top: 15vh;
-    background-image: linear-gradient(to top,#475369 30%,#364661 60%,rgba(255,0,0,0)10%,#364661 40%);
+    /* background-image: linear-gradient(to top,#475369 30%,#364661 60%,rgba(255,0,0,0)10%,#364661 40%); */
+    background-color: #364661;
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -94,6 +101,14 @@ nav>ul>li{
     padding-top: 200px;
 }
 
+.but{
+    height: 45px;
+    width: 90px;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+}
+
 #resume{
     height: 45px;
     width: 90px;
@@ -102,13 +117,13 @@ nav>ul>li{
     color: whitesmoke;
     position: absolute;
     left: 50%;
-    top: 41.5%;
+    top: 48%;
     animation: hide 4.2s steps(2) 1
 }
 #resume:hover{
     cursor: pointer;
 }
-#download{
+.linkStyle{
     color: whitesmoke;
     text-decoration: none;
     height: inherit;
@@ -131,6 +146,11 @@ nav>ul>li{
     font-size: 20px;
     font-family: 'Inter', sans-serif;
     font-weight: lighter;
+}
+#Home>h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 1vh;
 }
 
 #About{
@@ -180,6 +200,10 @@ nav>ul>li{
     letter-spacing: 3px;
     line-height: 40px;
 }
+.projects>h4, .projects>span{
+    margin-bottom: 1vh;
+    margin-right: 3vh;
+}
 
 /* form */
 
@@ -207,6 +231,15 @@ nav>ul>li{
     letter-spacing: 3px;
     padding: 10px;
 }
+
+.inputFields{
+    color: whitesmoke;
+    font-size: large;
+}
+#btn:hover{
+    transform: scale(1.2);
+}
+
 #Name{
     background-color: transparent;
 }
@@ -292,7 +325,7 @@ input[type=text] {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #475369;
+    background-color: #364661;
     border-left: 5px solid whitesmoke;
     animation: typ 2s steps(16) 1.5s 1 forwards, blink 0.25s steps(2) 3.5s infinite;
 }
@@ -315,6 +348,8 @@ input[type=text] {
     animation: typ 1.5s steps(10) 1 forwards, blink 0.25s steps(2) 1 1.5s forwards;
     /* animation: blink 0.25s infinite 1.5s */
 }
+
+
 @keyframes typ {
     99%{
         width: 100%;
