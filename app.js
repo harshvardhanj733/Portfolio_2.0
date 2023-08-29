@@ -47,6 +47,7 @@ try {
             return;
         }
         console.log("Sent" + info.response)
+        console.log("Message sent successfully to "+ Email)
     })
 
     console.log(savedMessage);
