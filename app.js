@@ -5,7 +5,7 @@ const UserModel = require("./models/user")
 const database = require('./db')
 const transporter = require('./email')
 require('dotenv').config();
-let port=8000;
+let port=process.env.port || 8000;
 
 database();
 
