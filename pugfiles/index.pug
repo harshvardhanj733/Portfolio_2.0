@@ -16,6 +16,7 @@ html(lang="en")
             div#logo
                 //- img(src="../pictures/Vector.svg", alt="", srcset="")#logoImg
                 img(src="../pictures/HVJLogoNoBg.png", alt="", srcset="")#logoImg
+
             ul
                 li 
                     a(href="#Home") HOME
@@ -27,24 +28,26 @@ html(lang="en")
                     a(href="#Experience") PROJECTS
                 li
                     a(href="#form") GET IN TOUCH
+         
+        
         div#main
             //- img(src="../pictures/HVJLogoNoBg.png")#backgroundImg
-            section#Home.section 
-                button#resume.resume
+            section#Home.section.top
+                button#resume.resume.p-2
                     a(href="/resume" target="__blank").linkStyle Get Resume
                 h2 Hey There! 
                 h6#typing0 My Name is
                 p#typing1 Harsh Vardhan Jain.
-                h5 Full Stack Web Developer.
+                h5 A Full Stack Web Developer.
             section#About.section 
                 p About 
                 div
                     ul
-                        li I am an Undergraduate student pursuing Bachelors in Computer Science and Engineering from Vellore Institute of Technology, Vellore, with a CGPA of 9.47. 
+                        li I am an Undergraduate student pursuing Bachelors in Computer Science and Engineering from Vellore Institute of Technology, Vellore, with a CGPA of 9.47.
                         li I am a Full Stack Developer and I love to make cool websites using cooler tech! 
-                        li I am proficient in using Node.js, Express.js, MongoDB, React.js, and Django. A
-                        li part from this, in my free time, I am a sport enthusiast and I love to sweat it out on the badminton court or on the football field!
-            section#Skills.section 
+                        li I am proficient in using Node.js, Express.js, MongoDB, React.js, and Django.
+                        li Apart from this, in my free time, I am a sport enthusiast and I love to sweat it out on the badminton court or on the football field!
+            section#Skills.section
                 p Skills 
                 div Here are some of the skills that I'm proficient in, along with my perceived level of proficiency: 
                 div C++ 
@@ -65,22 +68,22 @@ html(lang="en")
                     h3 Algo Visualiser 
                     span Created a website to visually demonstrate various sorting algorithms. 
                     button.but
-                        a(href="http://github.com/harshvardhanj733/Visualiser-Project" target="__blank").linkStyle Check it Out 
+                        a(href="http://github.com/harshvardhanj733/Visualiser-Project" target="__blank").linkStyle Check It Out 
                 div.projects 
                     h3 News App 
                     span Developed a News App using React.js and News API to generate top news headlines from around the world. Users can search the news according to the topics, or go through the popular generic topics.
                     button.but
-                        a(href="http://github.com/harshvardhanj733/News" target="__blank").linkStyle Check it Out
+                        a(href="http://github.com/harshvardhanj733/News" target="__blank").linkStyle Check It Out
                 div.projects 
                     h3 Text Editor 
                     span Developed a basic text editor capable of trimming white spaces, converting to lowercase or uppercase, showing the number of characters and the number of words, and copying the text to clipboard using React.js
                     button.but
-                        a(href="http://github.com/harshvardhanj733/text_editor" target="__blank").linkStyle Check it Out
+                        a(href="http://github.com/harshvardhanj733/text_editor" target="__blank").linkStyle Check It Out
                 div.projects 
                     h3 Art Spot 
                     span Developed the UI/UX for an art website, called Art Spot. Used vanilla Js to develop it.
                     button.but
-                        a(href="http://github.com/harshvardhanj733/ArtSpot" target="__blank").linkStyle Check it Out
+                        a(href="http://github.com/harshvardhanj733/ArtSpot" target="__blank").linkStyle Check It Out
                 div.projects 
                     h3 DoNake
                     ul
@@ -113,12 +116,13 @@ html(lang="en")
             div.icons
                 a(href="https://www.linkedin.com/in/harsh-vardhan-jain-701179222/" target="__blank") 
                     img(src="../pictures/linkedin.svg", alt="Linkedin", srcset="")#linkedin.iconsImg
-                a(href="https://medium.com/@anushreesharma232003" target="__blank")  
-                    img(src="../pictures/medium.svg", alt="", srcset="")#medium.iconsImg
+       
                 a(href="https://github.com/harshvardhanj733/" target="__blank") 
                     img(src="../pictures/git.svg", alt="", srcset="")#git.iconsImg
-                a(href="https://www.adobe.com/?promoid=RTQCN3LX" target="__blank")  
-                    img(src="../pictures/behance.svg", alt="", srcset="")#behance.iconsImg
+        
 
         script 
             include ../script/script.js
+            
+        
+        //- <script src="https://cdn.tailwindcss.com"></script>
